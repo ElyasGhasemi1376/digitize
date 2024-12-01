@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/output.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Card page</title>
+  </head>
+  <body class="bg-stone-100 h-screen">
+    <!-- ! App bar mobile section-->
+    <div class="md:hidden flex items-center justify-between my-5 container">
+      <a href="index.html">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-7 bg-white shadow-md rounded-md p-1 stroke-indigo-900 cursor-pointer"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </a>
+      <div class="text-indigo-900 text-base font-semibold">سبد خرید</div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="size-7 bg-white shadow-md rounded-md p-1 stroke-indigo-900 cursor-pointer"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- ! desktop navbar -->
+    <nav
+      class="hidden md:block sticky left-0 right-0 top-0 z-10 bg-white mb-3 rounded-sm"
+    >
+      <div
+        class="container 2xl:max-w-screen-xl md:flex justify-between items-center gap-2 lg:gap-3 px-1.5 py-1 lg:px-7 w-full"
+      >
+        <ul class="flex justify-center items-center gap-1 lg:gap-2.5">
+          <li>
+            <a href="#" class="block px-1 py-2.5">
+              <img src="../assets/icon/Logo-2.png" alt="DigiTaze" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-slate-800 hover:bg-gray-50 px-1 py-2.5 text-xs lg:text-sm xl:text-base flex justify-center items-center flex-1"
+              >خانه</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-slate-800 hover:bg-gray-50 px-1 py-2.5 text-xs lg:text-sm xl:text-base flex justify-center items-center flex-1"
+              >تلفن همراه</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-slate-800 hover:bg-gray-50 px-1 py-2.5 text-xs lg:text-sm xl:text-base flex justify-center items-center flex-1"
+              >لپ تاپ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-slate-800 hover:bg-gray-50 px-2 py-3 text-xs lg:text-sm xl:text-base flex justify-center items-center flex-1"
+              >ساعت هوشمند</a
+            >
+          </li>
+        </ul>
+
+        <div
+          class="relative inline-flex flex-1 justify-end items-center max-w-xs lg:max-w-sm"
+        >
+          <input
+            class="focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white border-0 bg-stone-100 w-full max-h-7 lg:max-h-9 px-2 rounded-xl text-xs lg:text-sm xl:text-base pr-8"
+            type="search"
+            name=""
+            id=""
+            placeholder="جستجوی نام محصول،نام برند و ...."
+          />
+          <span class="flex gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4 lg:size-5 ml-5 absolute right-1 top-1 lg:top-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!--! card -->
+    <div class="container block md:flex md:gap-x-2 md:mb-12 ">
+      <!-- ul -->
+      <div class="flex flex-col gap-y-2 md:max-w-md xl:max-w-lg md:w-1/2">
+        <!-- li -->
+        <div class="relative bg-white rounded-lg flex items-center gap-1 md:gap-0 justify-between px-1.5 py-1 md:px-3 md:py-2"
+        >
+          <div class="w-11 h-14 md:w-14 md:h-18 flex items-center">
+            <img
+              class="w-full h-full"
+              src="../assets/images/apple watches/1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-xs flex flex-col items-center justify-between gap-5 md:gap-2.5"
+          >
+            <p class="text-slate-800 font-semibold text-xs lg:text-base 2xl:text-lg">
+              ساعت هوشمند اپل سری ۶
+            </p>
+            <span class="block text-orange-500 font-bold text-sm"> ۲,۲۵۰,۰۰۰ تومان</span>
+          </div>
+
+          <div class="">
+            <div class="absolute top-1 left-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-3 lg:size-4 text-red-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="absolute left-6">
+            <div class="size-0.5 flex justify-center items-center">
+              <span class="flex justify-center items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-2"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                </svg>
+              </span>
+              <input class="w-full h-full mx-0.5" type="text" />
+              <span class="flex justify-center items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        
+       
+
+     
+         
+     
+         
+    
+        
+     
+        
+     
+        
+        
+        
+
+        
+
+  
+
+        <!-- ? discount price mobile section -->
+        <div
+          class="mt-6 mb-24 bg-white px-2 py-3 rounded-lg md:hidden flex flex-col gap-6 items-center justify-between"
+        >
+          <div class="flex justify-between items-center gap-3">
+            <div class="flex items-center justify-between gap-3 text-slate-800">
+              <p class="text-sm">مجموع قیمت :</p>
+              <div class="text-sm text-orange-500 font-extrabold">
+                <span>۶,۶۵۰,۰۰۰</span>
+                <span>تومان</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs">کد تخفیف دارید ؟</p>
+
+          <button
+            class="bg-orange-500 text-white rounded-md w-full max-w-52 p-3"
+            type="button"
+          >
+            ادامه فرآیند خرید
+          </button>
+        </div>
+      </div>
+
+      <!-- ? discount price card desktop -->
+      <div class="container hidden md:flex flex-1 md:w-1/2 fixed left-1 top-16">
+        <div
+          class="md:flex md:flex-col justify-center gap-3 px-3 py-2 md:w-full flex-1 bg-white shadow-sm rounded-xl h-fit"
+        >
+          <div class="flex items-center justify-between text-sm text-slate-800">
+            <p class="font-bold text-slate-800">مجموع قیمت:</p>
+            <p class="font-bold text-orange-500">۶,۶۵۰,۰۰۰ تومان</p>
+          </div>
+          <div class="flex items-center justify-between text-sm text-slate-800">
+            <p>کد تخفیف :</p>
+            <div class="flex items-center justify-between text-sm text-slate-800 w-32">
+              <input
+                class="w-full h-8 overflow-hidden border-2 border-gray-500 outline-none rounded-md rounded-l-none text-gray-400"
+                type="text"
+                placeholder="123ABC"
+                dir="ltr"
+              />
+              <button
+                class="w-16 h-8 border-none bg-red-500 overflow-hidden rounded-md rounded-r-none text-white"
+                type="button"
+              >
+                تایید
+              </button>
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-sm text-slate-800">
+            <p>تخفیف :</p>
+            <p>۲۵۰,۰۰۰ تومان</p>
+          </div>
+          <div class="flex items-center justify-between text-sm text-slate-800">
+            <p class="font-bold text-slate-800">قیمت نهایی :</p>
+            <p class="font-bold text-orange-500">۶,۴۰۰,۰۰۰ تومان</p>
+          </div>
+          <div class="flex justify-between items-center whitespace-nowrap gap-3 mt-6">
+            <button
+              class="bg-orange-500 border-2 border-orange-500 text-white rounded-md w-full p-1.5 whitespace-nowrap"
+              type="button"
+            >
+              ادامه فرآیند خرید
+            </button>
+            <button
+              class="text-orange-500 border-2 border-orange-500 bg-white rounded-md w-full p-1.5 whitespace-nowrap"
+              type="button"
+            >
+              انصراف از خرید
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! bottom navigation mobile -->
+    <nav
+      class="md:hidden shadow-[0_-4px_8px_0px_rgba(0,0,0,0.1)] bg-white fixed inset-x-0 bottom-0 mt-20 border border-t-2 rounded-tr-xl rounded-tl-xl"
+    >
+      <ul
+        x-data="{ activeBottomTab: 1, activeClass:'text-orange-600 font-bold' }"
+        class="flex items-center justify-evenly"
+      >
+        <li
+          @click="activeBottomTab = 1"
+          :class="activeBottomTab===1 ? activeClass : ''"
+          class="flex justify-center items-center flex-1"
+        >
+          <a
+            href="index.html"
+            @click.prevent="activeBottomTab=1"
+            class="hover:bg-stone-100 flex flex-1 justify-center items-center gap-1.5 text-xs px-0.5 py-3.5"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                :class="activeBottomTab===1?activeClass:''"
+                class="size-4 text-gray-400"
+              >
+                <path
+                  d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"
+                />
+                <path
+                  d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z"
+                />
+              </svg>
+            </span>
+            <span x-show="activeBottomTab===1">خانه</span>
+          </a>
+        </li>
+
+        <li
+          @click="activeBottomTab = 2"
+          :class="activeBottomTab===2 ? activeClass : ''"
+          class="flex justify-center items-center flex-1"
+        >
+          <a
+            href="#"
+            @click.prevent="activeBottomTab=1"
+            class="hover:bg-stone-100 flex flex-1 justify-center items-center gap-1.5 text-xs px-0.5 py-3.5"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                :class="activeBottomTab===2?activeClass:''"
+                class="size-4 text-gray-400"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3V6ZM3 15.75a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2.25Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3v-2.25Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <span x-show="activeBottomTab===2">پروفایل</span>
+          </a>
+        </li>
+
+        <li
+          @click="activeBottomTab = 3"
+          :class="activeBottomTab===3 ? activeClass : ''"
+          class="flex justify-center items-center flex-1"
+        >
+          <a
+            href="#"
+            @click.prevent="activeBottomTab=1"
+            class="hover:bg-stone-100 flex flex-1 justify-center items-center gap-1.5 text-xs px-0.5 py-3.5"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                :class="activeBottomTab===3 ?activeClass:''"
+                class="size-4 text-gray-400"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <span x-show="activeBottomTab===3">سبدخرید</span>
+          </a>
+        </li>
+
+        <li
+          @click="activeBottomTab = 4"
+          :class="activeBottomTab===4 ? activeClass : ''"
+          class="flex justify-center items-center flex-1"
+        >
+          <a
+            href="#"
+            @click.prevent="activeBottomTab=1"
+            class="hover:bg-stone-100 flex flex-1 justify-center items-center gap-1.5 text-xs px-0.5 py-3.5"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                :class="activeBottomTab===4 ? activeClass:''"
+                class="size-4 text-gray-400"
+              >
+                <path
+                  d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                />
+              </svg>
+            </span>
+            <span x-show="activeBottomTab===4">لایک ها</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ! FOOTER -->
+    <footer
+      class="hidden md:block w-full  bg-white  absolute inset-x-0 bottom-0 px-3.5 py-2.5"
+    >
+      <div class="flex justify-between lg:items-center px-2">
+        <div class="w-1/3">
+          <div>
+            <a href="#" class="block pb-4">
+              <img src="../assets/icon/Logo-2.png" alt="DigiTaze" />
+            </a>
+          </div>
+          <p>
+            دیجی‌ تایز عرضه کننده جدیدترین محصولات الکترونیک نظیر لپ تاپ، گوشی هوشمند و
+            ساعت هوشمند می‌باشد. دیجی تایز افتخار این را داشته که به <span class="text-orange-600 font-semibold">۲۲۱,۲۳۲</span> نفر تا به
+            اکنون خدمت رسانی داشته باشد.
+          </p>
+        </div>
+        <div>
+          <ul class="flex flex-col  justify-between gap-1">
+            <li class="font-bold md:text-md lg:text-lg 2xl:text-xl">محصولات</li>
+            <li class="md:text-sm lg:text-base 2xl:text-lg">تلفن همراه</li>
+            <li class="md:text-sm lg:text-base 2xl:text-lg">لپ تاپ</li>
+            <li class="md:text-sm lg:text-base 2xl:text-lg">ساعت هوشمند</li>
+          </ul>
+        </div>
+        <div>
+          <div class="w-2/3 xl:w-full">
+            <img src="../assets/images/Map.png" alt="Map.png">
+            <div>
+              <div class="flex justify-center items-center gap-2.5">
+                <span class="font-semibold">۰۲۱-۱۲۳۴۵۶</span>               
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 strooke-orange-600 fill-orange-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>
+                </span> 
+              </div>
+                <p class="font-semibold">info@digitize.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
