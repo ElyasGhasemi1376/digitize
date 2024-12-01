@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss ./src/css/input.css -o ./public/build/output.css --watch"
+    "dev": "postcss ./src/css/input.css -o ./docs/build/output.css --watch"
   },
   "keywords": [],
   "author": "",
