@@ -1,41 +1,41 @@
 @font-face {
   font-family: 'Vazir';
-  src: url('../../docs/assets/fonts/Vazir.eot');
-  src: url('../../docs/assets/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
-    url('../../docs/assets/fonts/Vazir.woff') format('woff'),
-    url('../../docs/assets/fonts/Vazir.woff2') format('woff2'),
-    /* url('../../docs/assets/fonts/Farsi-Digits/Vazir-FD.eot') format('eot'),
-    url('../../docs/assets/fonts/Farsi-Digits/Vazir-FD.woff') format('woff'),
-    url('../../docs/assets/fonts/Farsi-Digits/Vazir-FD.woff2') format('woff2'),
-    url('../../docs/assets/fonts/Farsi-Digits/Vazir-FD.ttf') format('truetype'), */
-    url('../../docs/assets/fonts/Vazir.ttf') format('truetype');
+  src: url('/docs/assets/fonts/Vazir.eot');
+  src: url('/docs/assets/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('/docs/assets/fonts/Vazir.woff') format('woff'),
+    url('/docs/assets/fonts/Vazir.woff2') format('woff2'),
+    /* url('/docs/assets/fonts/Farsi-Digits/Vazir-FD.eot') format('eot'),
+    url('/docs/assets/fonts/Farsi-Digits/Vazir-FD.woff') format('woff'),
+    url('/docs/assets/fonts/Farsi-Digits/Vazir-FD.woff2') format('woff2'),
+    url('/docs/assets/fonts/Farsi-Digits/Vazir-FD.ttf') format('truetype'), */
+    url('/docs/assets/fonts/Vazir.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Vazir';
-  src: url('../../docs/assets/fonts/Vazir-Bold.eot');
-  src: url('../../docs/assets/fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../../docs/assets/fonts/Vazir-Bold.woff') format('woff'),
-    url('../../docs/assets/fonts/Vazir-Bold.woff2') format('woff2'),
-    /* url('../../docs/assets/fonts/Farsi-Digits/Vazir-Bold-FD.eot') format('eot'),
-    url('../../docs/assets/fonts/Farsi-Digits/Vazir-Bold-FD.woff') format('woff'),
-    url('../../docs/assets/fonts/Farsi-Digits/Vazir-Bold-FD.woff2') format('woff2'),
-    url('../../docs/assets/fonts/Farsi-Digits/Vazir-Bold-FD.ttf') format('truetype'), */
-    url('../../docs/assets/fonts/Vazir-Bold.ttf') format('truetype');
+  src: url('/docs/assets/fonts/Vazir-Bold.eot');
+  src: url('/docs/assets/fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/docs/assets/fonts/Vazir-Bold.woff') format('woff'),
+    url('/docs/assets/fonts/Vazir-Bold.woff2') format('woff2'),
+    /* url('/docs/assets/fonts/Farsi-Digits/Vazir-Bold-FD.eot') format('eot'),
+    url('/docs/assets/fonts/Farsi-Digits/Vazir-Bold-FD.woff') format('woff'),
+    url('/docs/assets/fonts/Farsi-Digits/Vazir-Bold-FD.woff2') format('woff2'),
+    url('/docs/assets/fonts/Farsi-Digits/Vazir-Bold-FD.ttf') format('truetype'), */
+    url('/docs/assets/fonts/Vazir-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Vazir';
-  src: url('../../docs/assets/fonts/Vazir-Light.eot');
-  src: url('../../docs/assets/fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
-    url('../../docs/assets/fonts/Vazir-Light.woff') format('woff'),
-    url('../../docs/assets/fonts/Vazir-Light.woff2') format('woff2'),
-    /* url('../../docs/assets/fonts/Farsi-Digits/Vazir-light-FD.eot') format('eot'),
-    url('../../docs/assets/fonts/Farsi-Digits/Vazir-light-FD.woff') format('woff'),
-    url('../../docs/assets/fonts/Farsi-Digits/Vazir-light-FD.woff2') format('woff2'),
-    url('../../docs/assets/fonts/Farsi-Digits/Vazir-light-FD.ttf') format('truetype'), */
-    url('../../docs/assets/fonts/Vazir-Light.ttf') format('truetype');
+  src: url('/docs/assets/fonts/Vazir-Light.eot');
+  src: url('/docs/assets/fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('/docs/assets/fonts/Vazir-Light.woff') format('woff'),
+    url('/docs/assets/fonts/Vazir-Light.woff2') format('woff2'),
+    /* url('/docs/assets/fonts/Farsi-Digits/Vazir-light-FD.eot') format('eot'),
+    url('/docs/assets/fonts/Farsi-Digits/Vazir-light-FD.woff') format('woff'),
+    url('/docs/assets/fonts/Farsi-Digits/Vazir-light-FD.woff2') format('woff2'),
+    url('/docs/assets/fonts/Farsi-Digits/Vazir-light-FD.ttf') format('truetype'), */
+    url('/docs/assets/fonts/Vazir-Light.ttf') format('truetype');
   font-weight: 300;
 }

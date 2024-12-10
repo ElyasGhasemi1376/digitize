@@ -1,4 +1,4 @@
-@import '../../src/css/custom-fonts.css';
+@import '/src/css/custom-fonts.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
