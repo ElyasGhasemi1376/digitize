@@ -1,3 +1,4 @@
+@import '/src/css/custom-fonts.css';
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -605,9 +606,6 @@ select{
 }
 html{
     font-family: "Vazir";
-    font-style: normal;
-    font-weight: 400;
-    src: url('/docs/assets/fonts/Vazir-Light.woff2') format('woff2');
   }
 .container{
   width: 100%;
