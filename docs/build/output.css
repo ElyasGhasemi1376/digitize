@@ -140,7 +140,7 @@ html,
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: vazir; /* 4 */
+  font-family: "vazir"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -604,6 +604,12 @@ select{
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
+html{
+    font-family: "Vazir";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/docs/assets/fonts/Vazir-Light.woff2') format('woff2');
+  }
 .container{
   width: 100%;
   margin-right: auto;

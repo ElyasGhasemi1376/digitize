@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./docs/**/*.{html,js}"],
+  content: ['./docs/**/*.{html,js}'],
   theme: {
     container: {
       center: true,
@@ -8,11 +8,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["vazir"],
+        sans: ['"vazir"'],
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
-}
+  plugins: [require('@tailwindcss/forms')],
+};
